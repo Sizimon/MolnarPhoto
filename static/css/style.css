@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 /* GENERAL RULES */
+a {
+    color: white;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -36,4 +40,32 @@ body {
 
 #mainNav.navbar-shrink .nav-link:hover {
     color: #F05E23;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background-color: #141414;
+}
+
+.btn-primary:hover {
+    background-color: #191818;
+    color: #F05E23;
+}
+
+.btn-primary:focus {
+    background-color: #191818;
+}
+
+/* CARDS */ 
+.contact-section .card {
+    background-color: #191818;
+    color: #fafafa;
+    border-bottom: 0.25rem solid #F05E23;
+}
+
+.contact-section .card hr {
+    border-color: #F05E23;
+    border-width: 0.25rem;
+    width: 3rem;
+
 }
