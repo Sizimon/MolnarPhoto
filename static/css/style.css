@@ -2,8 +2,38 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* GENERAL RULES */
 .uppercase {
     text-transform: uppercase;
 }
 
+
+/* NAV */
+#mainNav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+
+/* NAV BAR AFTER COLLAPSE */
+#mainNav.navbar-shrink {
+    background-color: #141414;
+    opacity: 0.97;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+    color: #9A9A9A;
+}
+
+#mainNav.navbar-shrink .nav-link {
+    color: #9A9A9A;
+}
+
+#mainNav.navbar-shrink .nav-link:hover {
+    color: #F05E23;
+}
