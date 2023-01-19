@@ -12,19 +12,14 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/photography")
-def photography():
-    return render_template("photography.html")
+@app.route("/production")
+def production():
+    return render_template("production.html")
 
 
-@app.route("/videography")
-def videography():
-    return render_template("videography.html")
-
-
-@app.route("/pricing")
-def pricing():
-    return render_template("pricing.html")
+@app.route("/artsy")
+def artsy():
+    return render_template("artsy.html")
 
 
 if __name__ == "__main__":

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +11,10 @@ a {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.content-font {
+    font-family: "Titillium Web", sans-serif;
 }
 
 
@@ -67,5 +73,26 @@ a {
     border-color: #F05E23;
     border-width: 0.25rem;
     width: 3rem;
+}
 
+/* MASTHEAD */
+
+.masthead {
+    background: linear-gradient(to bottom,rgba(22,22,22,.3) 0,rgba(22,22,22,.7) 75%,#161616 100%),url("../img/main-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* CONTENT */
+
+.bg-gray {
+    background-color: #191818;
+}
+
+.projects-section .project-text hr {
+    border-color: #F05E23;
+    border-width: 0.25rem;
+    width: 30%;
 }

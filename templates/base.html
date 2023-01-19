@@ -1,172 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/grayscale.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Molnar Photo</title>
-</head>
-<body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand js-scroll-trigger uppercase" href="#page-top">Molnar Photography</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger uppercase" href="{{ url_for('index') }}">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger uppercase" href="{{ url_for('photography') }}">Photography</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger uppercase" href="{{ url_for('videography') }}">Videography</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger uppercase" href="{{ url_for('pricing') }}">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger uppercase" href="#contact-section">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    
-      <!-- Header -->
-      <header class="masthead">
-        <div class="container d-flex h-100 align-items-center">
-          <div class="mx-auto text-center">
-            <h1 class="mx-auto my-0 text-uppercase">Marcel Molnar</h1>
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">The guy who knows his cameras...</h2>
-            <a href="#about" class="btn btn-primary js-scroll-trigger">My Work</a>
-          </div>
-        </div>
-      </header>
-    
-      <!-- About Section -->
-      <section id="about" class="about-section text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-white mb-4">Photography at its finest.</h2>
-              <p class="text-white-50">My passion is life, and the lives of people, I capture the story, not just the person.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <!-- Projects Section -->
-      <section id="projects" class="projects-section bg-light">
-        <div class="container">
-    
-            {% block content %}
-            {% endblock %}
-    
-        </div>
-      </section>
-    
-      <!-- Signup Section -->
-      <section id="signup" class="signup-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-lg-8 mx-auto text-center">
-    
-              <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-              <h2 class="text-white mb-5">Subscribe for monthly content!</h2>
-    
-              <form class="form-inline d-flex">
-                <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-                <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-              </form>
-    
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <!-- Contact Section -->
-      <section class="contact-section bg-black">
-        <div class="container">
-    
-          <div class="row">
-    
-            <div class="col-md-4 mb-3 mb-md-0">
-              <div class="card py-4 h-100">
-                <div class="card-body text-center">
-                  <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                  <h4 class="text-uppercase m-0">Address</h4>
-                  <hr class="my-4">
-                  <div class="small">Placeholder Road 17, Holderplace</div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-4 mb-3 mb-md-0">
-              <div class="card py-4 h-100">
-                <div class="card-body text-center">
-                  <i class="fas fa-envelope text-primary mb-2"></i>
-                  <h4 class="text-uppercase m-0">Email</h4>
-                  <hr class="my-4">
-                  <div class="small">
-                    <a href="#">siizmonsus@gmail.com</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-4 mb-3 mb-md-0">
-              <div class="card py-4 h-100">
-                <div class="card-body text-center">
-                  <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                  <h4 class="text-uppercase m-0">Phone</h4>
-                  <hr class="my-4">
-                  <div class="small">+46736487570</div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <div class="social d-flex justify-content-center">
-            <a href="#" class="mx-2">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="mx-2">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="mx-2">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-    
-        </div>
-      </section>
-    
-      <!-- Footer -->
-      <footer class="bg-black small text-center text-white-50">
-        <div class="container">
-          Copyright &copy; SS.DEV 2023
-        </div>
-      </footer>
-    
-      <!-- Bootstrap core JavaScript -->
-      <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
-      <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    
-      <!-- Plugin JavaScript -->
-      <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
-    
-      <!-- Custom scripts for this template -->
-      <script src="{{ url_for('static', filename='js/grayscale.min.js') }}"></script>
 
-      <!-- Custom Javascript -->
-      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/grayscale.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>Molnar Photo</title>
+</head>
+
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger uppercase" href="#page-top">Molnar M Photo</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger uppercase" href="{{ url_for('index') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger uppercase" href="{{ url_for('production') }}">Production</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger uppercase" href="{{ url_for('artsy') }}">Artsy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger uppercase" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">I am...</h2>
+        <h1 class="mx-auto my-0 text-uppercase">Marcel Molnar</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Photography is my passion.</h2>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">My Work</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4 uppercase">Photography at its finest.</h2>
+          <p class="text-white-50 content-font">I capture moments, the moment will tell the story.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-gray text-white">
+    <div class="container">
+
+      {% block content %}
+      {% endblock %}
+
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe for updates and offers!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail"
+              placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small">Placeholder Road 17, Holderplace</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small">
+                <a href="#">siizmonsus@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small">+46736487570</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; SS.DEV 2023
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/grayscale.min.js') }}"></script>
+
+  <!-- Custom Javascript -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
+
 </html>
