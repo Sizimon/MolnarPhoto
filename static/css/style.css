@@ -17,6 +17,10 @@ a {
     font-family: "Titillium Web", sans-serif;
 }
 
+.text-main-orange {
+    color: #F05E23;
+}
+
 
 /* NAV */
 #mainNav .nav-link {
@@ -91,8 +95,19 @@ a {
     background-color: #191818;
 }
 
+.projects-section {
+    padding: 5rem;
+}
+
 .projects-section .project-text hr {
     border-color: #F05E23;
     border-width: 0.25rem;
     width: 30%;
 }
+
+.content-header {
+    margin-bottom: 5rem;
+}
+
+/* CAROUSEL */
+
