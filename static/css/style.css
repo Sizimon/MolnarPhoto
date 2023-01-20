@@ -21,6 +21,10 @@ a {
     color: #F05E23;
 }
 
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 /* NAV */
 #mainNav .nav-link {
@@ -96,7 +100,7 @@ a {
 }
 
 .projects-section {
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 .projects-section .project-text hr {
@@ -109,5 +113,31 @@ a {
     margin-bottom: 5rem;
 }
 
+.option-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-item {
+    font-size: 120%;
+}
+
 /* CAROUSEL */
 
+
+#carousel-1 {
+    margin-bottom: 5rem;
+}
+
+
+@media screen and (min-width: 280px) {
+    .carousel {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .carousel {
+        margin: 0 2.5rem 0 2.5rem;
+    }
+}
