@@ -122,22 +122,28 @@ a {
     font-size: 120%;
 }
 
-/* CAROUSEL */
+/* FORM */
 
+input,
+textarea {
+    width: 100%;
+    color: #9A9A9A;
+    background-color: #191818;
+    outline: none;
+    border: 1px solid #9A9A9A;
+}
 
-#carousel-1 {
-    margin-bottom: 5rem;
+input:hover,
+textarea:hover {
+    border: 1px solid #F05E23;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: #9A9A9A;
 }
 
 
-@media screen and (min-width: 280px) {
-    .carousel {
-        margin-bottom: 2rem;
-    }
-}
-
-@media screen and (min-width: 992px){
-    .carousel {
-        margin: 0 2.5rem 0 2.5rem;
-    }
-}
