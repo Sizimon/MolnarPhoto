@@ -32,6 +32,17 @@ a {
 }
 
 /* NAV */
+#mainNav {
+    background-color: transparent;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: #F05E23;
+    border: 1px solid #F05E23;
+}
+
 #mainNav .nav-link {
     color: rgba(255, 255, 255, 0.9);
 }
@@ -40,6 +51,12 @@ a {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
     letter-spacing: 5px;
+}
+
+#navbarResponsive ul li.active a {
+    text-decoration: none;
+    color: #F05E23;
+    text-transform: uppercase;
 }
 
 
@@ -162,7 +179,7 @@ input,
 textarea {
     width: 100%;
     color: #9A9A9A;
-    background-color: #191818;
+    background-color: #161616;
     outline: none;
     border: none;
     border-bottom: 1px solid #9A9A9A;
